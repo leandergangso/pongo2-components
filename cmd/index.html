@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>pongo2components</title>
+</head>
+
+<body>
+  <!-- button w/default value -->
+  {% component 'button' %}
+
+  <!-- button w/value prop -->
+  {% component 'button' value="my value" %}
+
+  <!-- button w/default slot -->
+  {% component 'button' %}
+  <span>default slot value</span>
+  {% endcomponent %}
+
+  <!-- button w/default values -->
+  {% component 'button' %}
+  {% slot 'before' %}
+  <span>before slot</span>
+  {% endslot %}
+  <span>default slot value</span>
+  {% slot 'after' %}
+  <span>after slot</span>
+  {% endslot %}
+  {% endcomponent %}
+
+  <!-- button w/multiple slots -->
+  {% component 'button' %}
+  {% slot 'before' %}
+  <span>before slot</span>
+  {% slot 'before-after' %}
+  <span>before after nested slot</span>
+  {% endslot %}
+  {% endslot %}
+  <span>default slot value</span>
+  {% endcomponent %}
+</body>
+
+</html>
