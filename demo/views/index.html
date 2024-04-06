@@ -2,20 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta
+    name="keywords"
+    content=""
+  />
+  <meta
+    name="description"
+    content=""
+  />
+  <meta charset="UTF-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
-  >
+  />
   <title>pongo2components</title>
 </head>
 
 <body>
   <!-- button w/default value -->
   {% component 'button' %}
+  {% endcomponent %}
 
   <!-- button w/value prop -->
-  {% component 'button' value="my value" %}
+  {% component 'button' value = 'my value' %}
+  {% endcomponent %}
 
   <!-- button w/default slot -->
   {% component 'button' %}

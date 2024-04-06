@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta
+    name="keywords"
+    content=""
+  />
+  <meta
+    name="description"
+    content=""
+  />
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>pongo2components</title>
+</head>
+
+<body>
+  {% component 'button' value="value" type="type" %}
+  {% endcomponent %}
+
+  {% comment %}
+  {% component 'button' value="value" type="type" %}
+  {% slot 'default' %}
+  {% endslot %}
+  {% endcomponent %}
+  {% endcomment %}
+</body>
+
+</html>

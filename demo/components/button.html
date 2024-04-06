@@ -1,0 +1,27 @@
+<p>basic buttonq</p>
+<button
+  class="{{class}}"
+  type="button"
+>my button {{value}}</button>
+
+<hr>
+
+{% comment %}
+<p>button with slot</p>
+<button>
+  {% slot 'default' %}
+  this is the default value
+  {% endslot %}
+</button>
+
+<hr>
+
+<p>button with level prop</p>
+<button class="{{prop == 1 ? 'blue' : ''}}">{{value}}</button>
+{% endcomment %}
+
+<style>
+  .blue {
+    color: blue
+  }
+</style>
